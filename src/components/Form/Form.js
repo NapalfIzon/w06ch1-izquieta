@@ -5,9 +5,9 @@ const Form = () => {
 
   const changeValue = () => {};
 
-  const isDisabled = () => {
-    return true;
-  };
+  // const isDisabled = () => {
+  //   return "";
+  // };
 
   return (
     <form className="form__todo" onSubmit={sendForm} autoComplete="off">
@@ -19,7 +19,7 @@ const Form = () => {
         placeholder="Insert the task to do..."
         required
       />
-      <button className="form__button" disabled={isDisabled}>
+      <button className="form__button" disabled="{isDisabled}">
         Add to list
       </button>
     </form>
