@@ -1,20 +1,16 @@
-const Task = (toDoTask) => {
-  const onUpdate = () => {};
-
-  const onDelete = () => {};
-
+const Task = (tasks, updateTask, deleteTask) => {
   return (
     <li className="todo__task">
-      <p>{toDoTask.text}</p>
+      <p>{tasks.text}</p>
       <input
         className="todo__checkbox"
         type="checkbox"
-        checked={toDoTask.checked}
+        checked={tasks.isChecked}
       />
-      <button className="todo__update" onClick={onUpdate}>
+      <button className="todo__update" onClick={updateTask}>
         update
       </button>
-      <button className="todo__delete" onClick={onDelete}>
+      <button className="todo__delete" onClick={deleteTask}>
         delete
       </button>
     </li>
