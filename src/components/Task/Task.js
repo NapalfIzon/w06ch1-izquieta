@@ -1,12 +1,11 @@
-const Task = (tasks, updateTask, deleteTask) => {
+const Task = ({ taskData: { text, isChecked } }) => {
+  const updateTask = () => {};
+  const deleteTask = () => {};
+
   return (
     <li className="todo__task">
-      <p>{tasks.text}</p>
-      <input
-        className="todo__checkbox"
-        type="checkbox"
-        checked={tasks.isChecked}
-      />
+      <p>{text}</p>
+      <input className="todo__checkbox" type="checkbox" checked={isChecked} />
       <button className="todo__update" onClick={updateTask}>
         update
       </button>
