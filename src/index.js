@@ -6,11 +6,11 @@ import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import configureStore from "./redux/store";
 
-const telenyeco = configureStore();
+const store = configureStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider store={telenyeco}>
+    <Provider store={store}>
       <App />
     </Provider>
   </React.StrictMode>,
@@ -19,5 +19,6 @@ ReactDOM.render(
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
+// Mario, gracias por subir el ejercicio: Dani, Xavi, David (el bailarín) y yo te lo agradecemos!
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
