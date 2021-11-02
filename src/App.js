@@ -1,7 +1,5 @@
 import "./App.css";
 import Form from "./components/Form/Form";
-import Task from "./components/Task/Task";
-import useTodo from "./hooks/useTodo";
 
 function App() {
   return (
